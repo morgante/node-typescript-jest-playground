@@ -1,6 +1,8 @@
+import { vi, describe, it, expect } from 'vitest';
+
 import { useDefault } from '../src/main.js';
 
-jest.mock('../src/mock.js', () => ({
+vi.mock('../src/mock.js', () => ({
   default: {
     methodBar: () => 'foo',
     methodFoo: () => 'bar',

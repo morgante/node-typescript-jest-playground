@@ -1,6 +1,8 @@
+import { vi, describe, it, expect } from 'vitest';
+
 import { useConstant} from '../src/main.js';
 
-jest.mock('../src/constant.js', () => ({
+vi.mock('../src/constant.js', () => ({
   default: "Mock value"
 }));
 
